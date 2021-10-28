@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.29)  26 OCT 2021 16:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.29)  28 OCT 2021 10:26
 entering extended mode
 **D:/CV_tmp/latex_resume_template-master/resume_template_rus2.tex
 (D:/CV_tmp/latex_resume_template-master/resume_template_rus2.tex
@@ -801,11 +801,6 @@ LaTeX Info: Redefining \nameref on input line 58.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-
-Underfull \hbox (badness 5519) in paragraph at lines 62--62
-\T2A/cmr/b/n/20.74 (+20) Junior data scientist/ Ml
- []
-
 LaTeX Font Info:    Trying to load font information for U+fontawesometwo on inp
 ut line 65.
 
@@ -813,7 +808,7 @@ ut line 65.
 metwo.fd
 File: ufontawesometwo.fd 2016/05/22 Font definitions for U/fontawesometwo.
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 98.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 97.
 
 
 (C:\Users\Dmitry\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
@@ -822,7 +817,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (C:\Users\Dmitry\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 98.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 97.
 
 
 (C:\Users\Dmitry\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -838,16 +833,16 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 fonts.
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.139 \end{document}
+l.138 \end{document}
                     
 
  
 Here is how much of TeX's memory you used:
- 14769 strings out of 478864
- 218540 string characters out of 2848186
- 598633 words of memory out of 3000000
- 32410 multiletter control sequences out of 15000+600000
- 419796 words of font info for 90 fonts, out of 8000000 for 9000
+ 14760 strings out of 478864
+ 218404 string characters out of 2848186
+ 599633 words of memory out of 3000000
+ 32406 multiletter control sequences out of 15000+600000
+ 417982 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,5n,66p,313b,352s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!
