@@ -46,14 +46,34 @@
 
 \newcommand{\NewPart}[1]{\section*{{\color{gray}{#1}}}}
 
+\newcommand{\Projects}[4]{
+		\noindent \textbf{#1} \hfill  
+		\hfill #2 \par  % Duration
+		\noindent {#3} \par        % School
+		\noindent\hangindent=2em\hangafter=0 \small #4 % Description
+		\normalsize \par}
+
 \newcommand{\SkillsEntry}[2]{\textbf{#1}: #2}  
 		
 \newcommand{\ExperienceEntry}[4]{
 		\noindent \textbf{#1} \hfill  
 		\hfill #2 \par  % Duration
 		\noindent \textit{#3} \par        % School
-		\noindent\hangindent=2em\hangafter=0 \small #4 % Description
+\noindent  \text   \par    
+		\noindent\hangindent=1em\hangafter=0 #4 % Description
 		\normalsize \par}
+
+
+
+\newcommand{\Other}[4]{
+		\noindent \textbf{#1} \hfill  
+		\hfill #2 \par  % Duration
+		\noindent \textit{#3} \par        % School 
+		\noindent\hangindent=2em\hangafter=0  #4 % Description
+		\normalsize \par}
+
+
+
 
 \begin{document}
 
@@ -67,12 +87,28 @@
 \MyContact{\faLinkedin : \href{https://www.linkedin.com/in/dkorolev13}{linkedin.com/in/dkorolev13}}
 \end{multicols}
 
+
+\NewPart{Проекты }{}
+\Projects
+{Определение числа ошибок  в репозиториях}
+{}
+{\href{https://github.com/dkorolev13/bugs_dependense}{github.com/dkorolev13/bugs\_dependense}}
+{	
+\begin{itemize}
+	\item[]{Задача регрессии: Восстановить зависимость числа bugs от значений признаков: автора коммита, даты и др.}
+	\item[]{Подготовил данные: выделил месяцы и выходные дни, применил OHE для категориальных признаков}
+	\item[]{Проверил значение RMSE на линейных моделях и случайном лесе}
+          \item[]{Получил RMSE = 1.84 для RidgeCV при среднем значении 2.99}
+\end{itemize}
+}
+
+{}
+
 \NewPart{Навыки }{}
 
 \begin{itemize}
   \item[]{\SkillsEntry{Языки программирования}{Python, C++, SQL}}
-  \item[]{\SkillsEntry{Библиотеки DS}{pandas, seaborn, numpy,  matplotlib}}
-  \item[]{\SkillsEntry{Библиотеки ML}{scikit-learn}}
+  \item[]{\SkillsEntry{Библиотеки DS}{pandas, scikit-learn, seaborn, numpy,  matplotlib}}
   \item[]{\SkillsEntry{СУБД}{PostgreSQL}}
   \item[]{\SkillsEntry{Математика}{линейная алгебра, мат. анализ, теория вероятности,  мат. статистика}}
   \item[]{\SkillsEntry{Английский}{читаю документацию}}
@@ -86,13 +122,14 @@
 {Разработчик Qt/C++}
 {Сентябрь 2017 - по настоящее время}
 {АО «Концерн ВКО «Алмаз – Антей» $\vert$ Москва}
+{Оценка точности координатной привязки спутниковых снимков (под NDA):}
 {	
 \begin{itemize}
-	\item{Разработка на С++  в Qt геоинформационных приложений под Windows и Linux(Astra)}
+	\item{Разработал на С++  в Qt  под  AstraLinux}
 	\item{Разработал взаимодействие GUI и классов, отвечающих за математический аппарат приложения}
-	\item{Разработал классы обмена данными между беспилотником и переферией: GPS, дальномер}
-          \item{Участие в оформлении документации и согласовании ее с заказчиком}
-          \item{Участие в проведении испытаний программного обеспечения}
+	%\item{Разработал классы обмена данными между беспилотником и переферией: GPS, дальномер}
+       %   \item{Участие в оформлении документации и согласовании ее с заказчиком}
+        %  \item{Участие в проведении испытаний программного обеспечения}
 \end{itemize}
 }
 
@@ -102,33 +139,32 @@
 \NewPart{Образование}{}
 
 \ExperienceEntry
-{Инженер-математик}
+{Прикладная математика}
 {2005 - 2010}
 {\href{https://mgsu.ru/}
 {Московский государственный строительный университет} $\vert$ Москва}
 {}
 
-\NewPart{Курсы }{}
-{	
-\begin{itemize}
-	\item{Coursera (МФТИ, Яндекс): Обучение на размеченных данных}
-	\item{Stepik (CS центр): Алгоритмы: теория и практика}
-	\item{Stepik (Дальневосточный федеральный университет): Интерактивный тренажер по SQL}
+%\NewPart{Курсы }{}
+%{	
+%\begin{itemize}
+%	\item{Coursera (МФТИ, Яндекс): Обучение на размеченных данных}
+%	\item{Stepik (CS центр): Алгоритмы: теория и практика}
+	%\item{Stepik (Дальневосточный федеральный университет): Интерактивный тренажер по SQL}
         
-\end{itemize}
-}
+%\end{itemize}
+%}
 
 \NewPart{Дополнительно }{}
 {	
 
-\ExperienceEntry
+\Other
 {Инженер}
 {Январь 2011 - Сентябрь 2017}
 {АО  «Мосинжпроект»$\vert$ Москва}
 {	
 \begin{itemize}
-	\item{Выполнение технических обследований сооружений московского метрополитена}
-	\item{Подготовка технических отчетов, согласование с ГУП «Московский метрополитен»}
+	\item{Обследование сооружений московского метрополитена, подготовка отчетов, согласование с Заказчиком}
 \end{itemize}
 }
 
@@ -137,6 +173,12 @@
 {Ноябрь 2010 - Ноябрь 2011}
 {Вооруженны силы РФ $\vert$ Иваново, Псков}
 {	
+
+\Other
+{Хобби}
+{ }
+{Дзюдо, бег}
+
 
 }
 }
